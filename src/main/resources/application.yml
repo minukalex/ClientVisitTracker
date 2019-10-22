@@ -1,0 +1,7 @@
+
+# Spring Configuration
+mongoDB:
+  url: "localhost"
+  port: 27017
+  database: "clientVisit"
+  auth: false
