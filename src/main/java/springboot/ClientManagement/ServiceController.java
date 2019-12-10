@@ -29,7 +29,7 @@ public class ServiceController {
 
 
 	@RequestMapping(value = "/saveData", method = RequestMethod.POST)
-	public ClientVisitModel createPet(@Valid @RequestBody ClientVisitModel clientVisitModel) {
+	public ClientVisitModel saveClientVisitData(@Valid @RequestBody ClientVisitModel clientVisitModel) {
 
 		mongoDBManager.saveData(clientVisitModel);
 		return clientVisitModel;
